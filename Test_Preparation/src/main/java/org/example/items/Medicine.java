@@ -35,4 +35,12 @@ public class Medicine extends Item{
                 - super.sellingPrice(overchargePercentage)
                 * this.ageCategory.getReductionPercentage()/100;
     }
+
+    @Override
+    public String toString() {
+        return "Medicine{" +
+                "expiryDate=" + expiryDate +
+                ", ageCategory=" + ageCategory +
+                '}';
+    }
 }

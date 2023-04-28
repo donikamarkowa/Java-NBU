@@ -2,7 +2,9 @@ package org.example.items;
 
 import org.example.exceptions.NegativeOverchargePercentageException;
 
-public class Item implements Sellable{
+import java.io.Serializable;
+
+public class Item implements Sellable, Serializable {
     private String inventoryNumber;
     private String name;
     private double deliveryPrice;
